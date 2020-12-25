@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/student_app_nav_graph"
+    app:startDestination="@id/groupsFragment">
+
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="com.example.studenthelper.ui.fragment.GroupsFragment"
+        android:label="GroupsFragment">
+        <action
+            android:id="@+id/action_groupsFragment_to_weekdaysFragment"
+            app:destination="@id/weekdaysFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.studenthelper.ui.fragment.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/pairsFragment"
+        android:name="com.example.studenthelper.ui.fragment.PairsFragment"
+        android:label="PairsFragment" />
+    <fragment
+        android:id="@+id/weekdaysFragment"
+        android:name="com.example.studenthelper.ui.fragment.WeekdaysFragment"
+        android:label="WeekdaysFragment">
+        <action
+            android:id="@+id/action_weekdaysFragment_to_pairsFragment"
+            app:destination="@id/pairsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+</navigation>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StudentHelper</string>
+    <string name="TITLE_SCHEDULE_MENU">Schedule</string>
+    <string name="TITLE_PROFILE_MENU">Profile</string>
+</resources>
