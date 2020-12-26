@@ -12,11 +12,7 @@ class GroupAdapter(
     private var groupList: List<GroupDto>
 ) : RecyclerView.Adapter<GroupViewHolder>() {
 
-    private lateinit var listener: OnItemClickListener
-
-    fun setOnItemClickListener(listener: OnItemClickListener) {
-        this.listener = listener
-    }
+    private var onItemClickListener: ((GroupDto) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         GroupViewHolder(
@@ -25,14 +21,16 @@ class GroupAdapter(
         )
 
     override fun onBindViewHolder(holder: GroupViewHolder, position: Int) {
+        val groupDto = groupList[position]
         holder.groupName.text = groupList[position].name
+        holder.itemView.setOnClickListener {
+            onItemClickListener?.let { it(groupDto) }
+        }
     }
 
     override fun getItemCount(): Int = groupList.size
 
-//    private var onItemClickListener: ((GroupDto) -> Unit)? = null
-//
-//    fun setOnItemClickListener(listener: (GroupDto) -> Unit) {
-//        onItemClickListener = listener
-//    }
+    fun setOnItemClickListener(listener: (GroupDto) -> Unit) {
+        onItemClickListener = listener
+    }
 }
