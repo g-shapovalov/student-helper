@@ -1,4 +1,4 @@
-package com.example.studenthelper.viewholder
+package com.example.studenthelper.viewholder.schedule
 
 import android.view.View
 import android.widget.TextView

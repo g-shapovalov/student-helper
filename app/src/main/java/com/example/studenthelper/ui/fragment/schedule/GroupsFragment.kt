@@ -1,9 +1,7 @@
-package com.example.studenthelper.ui.fragment
+package com.example.studenthelper.ui.fragment.schedule
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -11,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.studenthelper.R
 import com.example.studenthelper.R.id.rvGroups
 import com.example.studenthelper.R.layout.fragment_groups
-import com.example.studenthelper.adapter.GroupAdapter
-import com.example.studenthelper.dto.GroupDto
+import com.example.studenthelper.adapter.schedule.GroupAdapter
+import com.example.studenthelper.dto.schedule.GroupDto
 
 class GroupsFragment : Fragment(fragment_groups) {
     private lateinit var groupAdapter: GroupAdapter

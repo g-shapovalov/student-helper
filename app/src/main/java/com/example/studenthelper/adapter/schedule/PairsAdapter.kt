@@ -1,11 +1,11 @@
-package com.example.studenthelper.adapter
+package com.example.studenthelper.adapter.schedule
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.studenthelper.R
-import com.example.studenthelper.dto.PairsDto
-import com.example.studenthelper.viewholder.PairsViewHolder
+import com.example.studenthelper.dto.schedule.PairsDto
+import com.example.studenthelper.viewholder.schedule.PairsViewHolder
 
 class PairsAdapter(
     private var pairsList: List<PairsDto>

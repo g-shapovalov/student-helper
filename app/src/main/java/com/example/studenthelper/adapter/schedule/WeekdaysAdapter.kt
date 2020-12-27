@@ -1,12 +1,11 @@
-package com.example.studenthelper.adapter
+package com.example.studenthelper.adapter.schedule
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.studenthelper.R
-import com.example.studenthelper.dto.GroupDto
-import com.example.studenthelper.dto.WeekDaysDto
-import com.example.studenthelper.viewholder.WeekdaysViewHolder
+import com.example.studenthelper.dto.schedule.WeekDaysDto
+import com.example.studenthelper.viewholder.schedule.WeekdaysViewHolder
 
 class WeekdaysAdapter(
     private var weekdaysList: List<WeekDaysDto>

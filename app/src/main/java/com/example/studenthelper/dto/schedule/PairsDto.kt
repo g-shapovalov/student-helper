@@ -1,4 +1,4 @@
-package com.example.studenthelper.dto
+package com.example.studenthelper.dto.schedule
 
 data class PairsDto(
     val name: String,

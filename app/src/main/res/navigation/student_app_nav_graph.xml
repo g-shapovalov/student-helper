@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/groupsFragment"
-        android:name="com.example.studenthelper.ui.fragment.GroupsFragment"
+        android:name="com.example.studenthelper.ui.fragment.schedule.GroupsFragment"
         android:label="GroupsFragment">
         <action
             android:id="@+id/action_groupsFragment_to_weekdaysFragment"
@@ -18,15 +18,23 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.studenthelper.ui.fragment.ProfileFragment"
-        android:label="ProfileFragment" />
+        android:name="com.example.studenthelper.ui.fragment.schedule.ProfileFragment"
+        android:label="ProfileFragment">
+        <action
+            android:id="@+id/action_profileFragment_to_profileAuthStep1Fragment"
+            app:destination="@id/profileAuthStep1Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/pairsFragment"
-        android:name="com.example.studenthelper.ui.fragment.PairsFragment"
+        android:name="com.example.studenthelper.ui.fragment.schedule.PairsFragment"
         android:label="PairsFragment" />
     <fragment
         android:id="@+id/weekdaysFragment"
-        android:name="com.example.studenthelper.ui.fragment.WeekdaysFragment"
+        android:name="com.example.studenthelper.ui.fragment.schedule.WeekdaysFragment"
         android:label="WeekdaysFragment">
         <action
             android:id="@+id/action_weekdaysFragment_to_pairsFragment"
@@ -36,4 +44,44 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
+    <fragment
+        android:id="@+id/profileAuthStep1Fragment"
+        android:name="com.example.studenthelper.ui.fragment.profile.ProfileAuthStep1Fragment"
+        android:label="ProfileAuthStep1Fragment">
+        <action
+            android:id="@+id/action_profileAuthStep1Fragment_to_profileAuthStep2Fragment"
+            app:destination="@id/profileAuthStep2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileAuthStep2Fragment"
+        android:name="com.example.studenthelper.ui.fragment.profile.ProfileAuthStep2Fragment"
+        android:label="ProfileAuthStep2Fragment">
+        <action
+            android:id="@+id/action_profileAuthStep2Fragment_to_semestrsFragment"
+            app:destination="@id/semestrsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/semestrsFragment"
+        android:name="com.example.studenthelper.ui.fragment.profile.SemestrsFragment"
+        android:label="SemestrsFragment">
+        <action
+            android:id="@+id/action_semestrsFragment_to_subjectsFragment"
+            app:destination="@id/subjectsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/subjectsFragment"
+        android:name="com.example.studenthelper.ui.fragment.profile.SubjectsFragment"
+        android:label="SubjectsFragment" />
 </navigation>

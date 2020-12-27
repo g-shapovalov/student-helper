@@ -1,12 +1,11 @@
-package com.example.studenthelper.adapter
+package com.example.studenthelper.adapter.schedule
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.studenthelper.R.layout.item_group
-import com.example.studenthelper.`interface`.OnItemClickListener
-import com.example.studenthelper.dto.GroupDto
-import com.example.studenthelper.viewholder.GroupViewHolder
+import com.example.studenthelper.dto.schedule.GroupDto
+import com.example.studenthelper.viewholder.schedule.GroupViewHolder
 
 class GroupAdapter(
     private var groupList: List<GroupDto>

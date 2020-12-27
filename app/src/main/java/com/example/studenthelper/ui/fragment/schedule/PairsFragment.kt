@@ -1,4 +1,4 @@
-package com.example.studenthelper.ui.fragment
+package com.example.studenthelper.ui.fragment.schedule
 
 import android.os.Bundle
 import android.view.View
@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.studenthelper.R
-import com.example.studenthelper.adapter.PairsAdapter
-import com.example.studenthelper.dto.PairsDto
+import com.example.studenthelper.adapter.schedule.PairsAdapter
+import com.example.studenthelper.dto.schedule.PairsDto
 
 class PairsFragment : Fragment(R.layout.fragment_pairs) {
     private lateinit var pairsAdapter: PairsAdapter

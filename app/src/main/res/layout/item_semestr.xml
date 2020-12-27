@@ -25,10 +25,10 @@
             android:paddingLeft="10dp">
 
             <TextView
-                android:id="@+id/tvGroupName"
+                android:id="@+id/tvSemestrName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4+5 КБ"
+                android:text="SEMESTR"
                 android:textSize="20dp"
                 android:textStyle="bold" />
         </LinearLayout>
