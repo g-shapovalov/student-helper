@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.studenthelper.ui.fragment.schedule.ProfileFragment"
+        android:name="com.example.studenthelper.ui.fragment.profile.ProfileFragment"
         android:label="ProfileFragment">
         <action
             android:id="@+id/action_profileFragment_to_profileAuthStep1Fragment"
@@ -31,7 +31,12 @@
     <fragment
         android:id="@+id/pairsFragment"
         android:name="com.example.studenthelper.ui.fragment.schedule.PairsFragment"
-        android:label="PairsFragment" />
+        android:label="PairsFragment">
+        <argument
+            android:name="weekday"
+            app:argType="com.example.studenthelper.api.schedule.models.Weekday" />
+    </fragment>
+
     <fragment
         android:id="@+id/weekdaysFragment"
         android:name="com.example.studenthelper.ui.fragment.schedule.WeekdaysFragment"
@@ -43,6 +48,9 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="group"
+            app:argType="com.example.studenthelper.api.schedule.models.Group" />
     </fragment>
     <fragment
         android:id="@+id/profileAuthStep1Fragment"

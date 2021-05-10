@@ -1,4 +1,4 @@
-package com.example.studenthelper.ui.fragment.schedule
+package com.example.studenthelper.ui.fragment.profile
 
 import androidx.fragment.app.Fragment
 import com.example.studenthelper.R

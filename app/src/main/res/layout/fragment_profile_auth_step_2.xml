@@ -21,7 +21,6 @@
         android:id="@+id/ivCaptcha"
         android:layout_width="160dp"
         android:layout_height="90dp"
-        android:scaleType="centerCrop"
         android:src="@drawable/captcha"
         app:layout_constraintBottom_toTopOf="@+id/etCapthaNumber"
         app:layout_constraintEnd_toEndOf="parent"
